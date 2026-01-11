@@ -1,0 +1,19 @@
+Estudos: desenvolvimento em Java
+
+IDE = Ambiente Integrado de Desenvolvimento
+
+=========================
+Lexica: é a linguagem em sí, cada linguagem tem suas "palavras" e meios de se escrever o código, porém a sintaxe sempre serão as mesmas ou semelhantes.
+Sintaxe: A sintaxe é a forma de escrever a lexica, básicamente é a estrutura do código.
+
+=========================
+Tipos de interpretadores:
+
+Interpreção de código: É aquele que irá rodar o código linha por linha, muito versátil em updates sem precisar desligar o sistema, podendo alterar os arquivos do códigos sem a necessidade de interromper o sistema, 
+já enviando o código fonte para ser executável.
+
+Compilador de código: É responsável por analisar todo o código antes de ser executado, normalmente é o mais rápido pelo fato do código ser traduzido antes de ser iniciado, porém não pode ser atualizado com o sistema online, 
+ele irá transformar o código fonte em código objeto(traduzido), e assim enviar o código será executável.
+
+==========================+
+
