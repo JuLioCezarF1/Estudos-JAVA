@@ -15,5 +15,47 @@ já enviando o código fonte para ser executável.
 Compilador de código: É responsável por analisar todo o código antes de ser executado, normalmente é o mais rápido pelo fato do código ser traduzido antes de ser iniciado, porém não pode ser atualizado com o sistema online, 
 ele irá transformar o código fonte em código objeto(traduzido), e assim enviar o código será executável.
 
-==========================+
+===========================
+Tipos variáveis:
+Char = Um único caracter(letra)
+Int = um número inteiro
+double = números quebrados
+string = Um conjunto de caracteres(letras)
 
+===========================
+Coletando dados do usuário:
+Para coletar entradas de dados, é necessário o uso da biblioteca do propio java "Scanner", para importar a biblioteca e apenas importar no inicio do código com a seguinte linha de código: import java.util.Scanner;
+O java é fortemente tipado, então é importante escrever o tipo de dado que o Scanner irá coletar, segue os exemplos:
+String: sc.next(); já é o suficiente para coletar uma string(texto) por padrão.
+Inteiro: sc.nextInt();
+Double: sc.nextDouble();
+Char: Para coletar apenas um caracter, e necessário chamar uma função para atribuir no sc.next(), segue a forma correta para coletar um Char: sc.next().CharAt(0); (O 0 significa o primeiro caracter, caso o usuário coloque mais de um).
+===========================
+Segue um código de apoio para ajudar a fixar os exemplos acima:
+
+import java.util.Scanner;
+import java.util.Locale;
+public class entrada_de_dados {
+    public static void main(String[] args) throws Exception {
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+        String x;
+        int y;
+        double z;
+        char j;
+        System.out.println("Digite seu nome: ");
+        x = sc.next();
+        System.out.println("Digite sua idade: ");
+        y = sc.nextInt();
+        System.out.println("Digite um valor decimal: ");
+        z = sc.nextDouble();
+        System.out.println("Digite sua letra da sorte: ");
+        j = sc.next().charAt(0);
+        System.out.println("Seu nome: " + x);
+        System.out.println("Sua idade: " + y);
+        System.out.println("Seu número decimal da sorte: " + z);
+        System.out.println("Sua letra da sorte é: " + j);
+        sc.close();
+    }
+}
+============================
