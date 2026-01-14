@@ -66,6 +66,6 @@ Segue algumas funções matemáticas em Java:
 Math.sqrt(variável); = Essa função é responsável para calcular a raíz quadrada de uma variável, no caso de um número int ou double.
 Math.pow(variável); = Essa função consegue calcular a potência(elevado ao quadrado) de uma variável, send int ou double.
 Math.abs(variável); =  Função que irá simplesmente exibir o valor absoluto de um número inteiro ou double. O valor absoluto mede a distância do número desejado e o 0.
-
+Documento: java.lang.Math
 ===========================
 ============================
