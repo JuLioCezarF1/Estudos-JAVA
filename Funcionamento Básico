@@ -30,6 +30,7 @@ String: sc.next(); já é o suficiente para coletar uma string(texto) por padrã
 Inteiro: sc.nextInt();
 Double: sc.nextDouble();
 Char: Para coletar apenas um caracter, e necessário chamar uma função para atribuir no sc.next(), segue a forma correta para coletar um Char: sc.next().CharAt(0); (O 0 significa o primeiro caracter, caso o usuário coloque mais de um).
+sc.nextLine(); serve para receber um texto longo até o botão "enter" ser acionado, isso quer dizer que tudo que for digitado nessa função, será guardado, diferentes dos outros que só guardam o primeiro texto ou número.
 ===========================
 Segue um código de apoio para ajudar a fixar os exemplos acima:
 
@@ -58,4 +59,13 @@ public class entrada_de_dados {
         sc.close();
     }
 }
+
+===========================
+Funções matemática
+Segue algumas funções matemáticas em Java:
+Math.sqrt(variável); = Essa função é responsável para calcular a raíz quadrada de uma variável, no caso de um número int ou double.
+Math.pow(variável); = Essa função consegue calcular a potência(elevado ao quadrado) de uma variável, send int ou double.
+Math.abs(variável); =  Função que irá simplesmente exibir o valor absoluto de um número inteiro ou double. O valor absoluto mede a distância do número desejado e o 0.
+
+===========================
 ============================
