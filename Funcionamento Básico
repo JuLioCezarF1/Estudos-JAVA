@@ -31,6 +31,12 @@ Inteiro: sc.nextInt();
 Double: sc.nextDouble();
 Char: Para coletar apenas um caracter, e necessário chamar uma função para atribuir no sc.next(), segue a forma correta para coletar um Char: sc.next().CharAt(0); (O 0 significa o primeiro caracter, caso o usuário coloque mais de um).
 sc.nextLine(); serve para receber um texto longo até o botão "enter" ser acionado, isso quer dizer que tudo que for digitado nessa função, será guardado, diferentes dos outros que só guardam o primeiro texto ou número.
+%f = ponto flutuante
+%d = inteiro
+%s = texto
+%n = quebra de linha após o chamado da variável, exemplo: (%.2f%n) aqui com o 2f declarei que o número flutuante terá 2 casas decimais, e como %n coloquei uma quebra de linha após o texto ser exibido.
+
+
 ===========================
 Segue um código de apoio para ajudar a fixar os exemplos acima:
 
