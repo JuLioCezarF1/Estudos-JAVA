@@ -74,4 +74,14 @@ Math.pow(variável); = Essa função consegue calcular a potência(elevado ao qu
 Math.abs(variável); =  Função que irá simplesmente exibir o valor absoluto de um número inteiro ou double. O valor absoluto mede a distância do número desejado e o 0.
 Documento: java.lang.Math
 ===========================
+Atribuição Acumulativa
+
+Atribuição acumulativa é a abreviação de linhas de código do tipo A = A + B (A recebe ELE MESMO + B), podendo ser substituido por A += B, que irá ter o mesmo efeito.
+Segue todos os exemplos que podem ser utilizados:
+Melhor forma // Forma antiga
+   A += B    //   A = A + B
+   A -= B    //   A = A - B
+   A *= B    //   A = A * B
+   A /= B    //   A = A / B
+   A %= B    //   A = A % B
 ============================
