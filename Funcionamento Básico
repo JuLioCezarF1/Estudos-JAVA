@@ -168,4 +168,18 @@ public class questao_1 {
 O código irá pedir um número ao usuário, enquanto o i(variável temporaria) for menor que o número declarado pelo usuário, o laço seguirá ativo e printando número ímpares. Quando o código identificar
 que o x tem o mesmo valor que o i, o programa irá pular para fora do laço de repetição, igualmente o While.
 
+======================================
+
+Conteudo extra:
+Operadores bitwise
+
+Operadores bitwise são utilizados para verificar bits e manipular números atraves de bits, sem precisar utilizar o valor inteiro,
+muito utilizado para linguagens de baixo nivel e para construção de código de rede.
+Operadores:
+& (e): Serve para verificar se os bits são verdadeiros, no caso os 2 precisam ser o bit "1".
+| (ou): É utilizado para saber se ao menos um dos bits é verdadeiro, que ao menos um ou todos tenha o bit "1".
+^ (ou exclusivo): Segue a mesma lógica do | (ou), porém ele não aceita que os todos bits sejam verdadeiro(1) ou falsos(0),
+é necessário uma divergência ali para o ^ (ou exclusivo) retornar o valor TRUE.
+
+
 =======================================
