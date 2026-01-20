@@ -210,3 +210,19 @@ public class Program{
         System.out.println("Index of 'bc': -" + i + "-");
         System.out.println("Last Index of 'bc': -" + j + "-");  
     }
+}
+
+Também podemos separar palavras de acordo com o .split(), por exemplo:
+
+public class Program{
+    public static void main(String[] args){
+
+    String s = "potato apple lemon";
+    String[] vect = s.split(" "); // O texto dentro da variável "s" será separados e enviado para o vetor, oq irá determinar a separação das palavras será o " "(espaço).
+                                                
+    System.out.println(vect[0]);
+    System.out.println(vect[1]);
+    System.out.println(vect[2]);
+    }
+
+}
