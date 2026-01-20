@@ -7,6 +7,7 @@ Lexica: é a linguagem em sí, cada linguagem tem suas "palavras" e meios de se 
 Sintaxe: A sintaxe é a forma de escrever a lexica, básicamente é a estrutura do código.
 
 =========================
+
 Tipos de interpretadores:
 
 Interpreção de código: É aquele que irá rodar o código linha por linha, muito versátil em updates sem precisar desligar o sistema, podendo alterar os arquivos do códigos sem a necessidade de interromper o sistema, 
@@ -16,6 +17,7 @@ Compilador de código: É responsável por analisar todo o código antes de ser 
 ele irá transformar o código fonte em código objeto(traduzido), e assim enviar o código será executável.
 
 ===========================
+
 Tipos variáveis:
 Char = Um único caracter(letra)
 Int = um número inteiro
@@ -23,6 +25,7 @@ double = números quebrados
 string = Um conjunto de caracteres(letras)
 
 ===========================
+
 Coletando dados do usuário:
 Para coletar entradas de dados, é necessário o uso da biblioteca do propio java "Scanner", para importar a biblioteca e apenas importar no inicio do código com a seguinte linha de código: import java.util.Scanner;
 O java é fortemente tipado, então é importante escrever o tipo de dado que o Scanner irá coletar, segue os exemplos:
@@ -38,6 +41,7 @@ sc.nextLine(); serve para receber um texto longo até o botão "enter" ser acion
 
 
 ===========================
+
 Segue um código de apoio para ajudar a fixar os exemplos acima:
 
 import java.util.Scanner;
@@ -67,6 +71,7 @@ public class entrada_de_dados {
 }
 
 ===========================
+
 Funções matemática
 Segue algumas funções matemáticas em Java:
 Math.sqrt(variável); = Essa função é responsável para calcular a raíz quadrada de uma variável, no caso de um número int ou double.
@@ -74,6 +79,7 @@ Math.pow(variável); = Essa função consegue calcular a potência(elevado ao qu
 Math.abs(variável); =  Função que irá simplesmente exibir o valor absoluto de um número inteiro ou double. O valor absoluto mede a distância do número desejado e o 0.
 Documento: java.lang.Math
 ===========================
+
 Atribuição Acumulativa
 
 Atribuição acumulativa é a abreviação de linhas de código do tipo A = A + B (A recebe ELE MESMO + B), podendo ser substituido por A += B, que irá ter o mesmo efeito.
@@ -85,3 +91,81 @@ Melhor forma // Forma antiga
    A /= B    //   A = A / B
    A %= B    //   A = A % B
 ============================
+
+Laços de repetição
+
+Existem maneiras de criar um loop em programação, os mais comuns são o "for" e o "while", que normalmente seguem condições para manter a repetição ativa, o que ajuda a evitar um loop infinito.
+While =  É bem mais utilizado quando não temos um número fixo, quando não sabemos o valor de uma variável, muito utilizado em funções de texto e atividades repetitivas.
+Sintaxe (While):
+A sintaxe é bastante parecida com o if e else, basicamente seguindo o mesmo modelo de haver uma condição, e dentro dessa condição executar os comandos, exemplo:
+while(condição){
+    comando1
+    comando2
+}
+Enquanto a condição for verdadeira, o while continuará sendo executado, segue uma atividade realizada para exemplo:
+
+import java.util.Scanner;
+public class questao_3 {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        int gasolina = 0;
+        int alcool = 0;
+        int diesel = 0;
+        int entrada_usuarios = 0;
+        while(entrada_usuarios != 4){
+            System.out.println("Lista de itens:");
+            System.out.println("1 - Alcool");
+            System.out.println("2 - Gasolina");
+            System.out.println("3 - Diesel");
+            System.out.println("4 - Fim");
+            System.out.print("Digite a Opção desejada: ");
+            entrada_usuarios = sc.nextInt();
+            if(entrada_usuarios == 1){
+                alcool += 1;
+            }
+            else if(entrada_usuarios == 2){
+                gasolina += 1;
+            }
+            else if(entrada_usuarios == 3){
+                diesel += 1;
+            }   
+        }
+        System.out.println("Muito Obrigado");
+            System.out.println("Vendas: ");
+            System.out.println("Alcool: "+ alcool);
+            System.out.println("Gasolina: "+ gasolina);
+            System.out.println("Diesel: "+ diesel);
+    
+    
+        sc.close();
+    }
+}
+Enquanto a entrada do usuário não for o número 4, os comandos inseridos dentro do while serão repetidos, quando o número 4 for digitado pelo usuário, o código irá pular para fora do while
+e executar a linha 133 até 142.
+
+Agora se tratando do FOR, segue quase a mesma maneira da sintaxe, porém com suas diferenças, a vantagem do FOR é a possibilidade de criar uma variável temporária, que terá dados diferentes sempre que o laço ser
+repetido.
+Exemplo de uma sintaxe básica de FOR:
+for(int i(declarando uma variável temporaria); i < 10(Declarando a condição que o laço irá seguir); i++(Declarando oq o laço irá fazendo quanto a condição for verdadeira));
+A digitação é meio complexa de lembrar inicialmente, porém com prática logo será memorável.
+Segue um exemplo de atividade realizada usando o FOR:
+
+import java.util.Scanner;
+public class questao_1 {
+    public static void main(String[] args) throws Exception {
+    System.out.print("Digite um número para saber os ímpares em seu intervalo: ");
+    Scanner sc = new Scanner(System.in);
+    int x = sc.nextInt();
+    for(int i = 0; i < x; i++){
+        if (i % 2 != 0) {
+            System.out.println(i);
+        }
+    }
+
+    sc.close();
+    }
+}
+O código irá pedir um número ao usuário, enquanto o i(variável temporaria) for menor que o número declarado pelo usuário, o laço seguirá ativo e printando número ímpares. Quando o código identificar
+que o x tem o mesmo valor que o i, o programa irá pular para fora do laço de repetição, igualmente o While.
+
+=======================================
